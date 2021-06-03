@@ -1,16 +1,60 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+   padding: 0;
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+   background-color: #ece;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+   color: inherit;
+   text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.header {
+   max-width: 80%;
+   margin: 0 auto;
+   padding: 10px 10px;
+   font-size: 25px;
+}
+.header a {
+   color: green;
+   display: inline-block;
+   padding-top: 10px;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+main {
+   max-width: 80%;
+   margin: 0 auto;
+   padding-top: 30px;
+   padding-bottom: 80px;
+}
+
+.recipes-list {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 40px;
+   list-style: none;
+}
+.recipe-card a {
+   display: block;
+   height: 100%;
+   text-decoration: none;
+   color: red;
+   font-size: 22px;
+}
+
+.recipe-card img {
+   height: 300px;
+   object-fit: cover;
+   margin-bottom: 12px;
+   border: 0.5px solid black;
+   display: block;
 }
